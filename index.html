@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tribo Ecommerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="text-[#151515] font-sans">
+    <!-- Navbar Section -->
+    <section>
+      <nav
+        class="bg-[#0f0f0f] text-white px-6 py-4 shadow-md fixed w-full top-0 z-50"
+      >
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+          <h1 class="text-4xl font-bold text-[#dfbd69]">Tribo Ecommerce</h1>
+          <ul class="flex space-x-6 text-sm font-medium">
+            <li>
+              <a
+                href="index.html"
+                class="hover:text-[#dfbd69] transition-colors text-2xl"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="calculadora.html"
+                class="hover:text-[#dfbd69] transition-colors text-2xl"
+                >Calculadora</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Hero Section -->
+    <section
+      class="min-h-screen flex flex-col items-center justify-center text-center px-6 py-20"
+      style="background-image: url('caminho-da-imagem.jpg')"
+    >
+      <h1
+        class="text-5xl md:text-6xl font-bold mb-6 leading-tight tracking-tight"
+      >
+        <span class="text-[#dfbd69]"
+          >A Lista de Fornecedores que você precisa</span
+        >
+      </h1>
+      <p class="text-lg md:text-xl text-[#ffffff] max-w-2xl mb-8">
+        Economize tempo e comece a vender com os melhores fornecedores do
+        Brasil. Uma curadoria completa com contatos atualizados, preços
+        acessíveis e alta confiabilidade.
+      </p>
+      <button
+        onclick="abrirModal()"
+        class="bg-[#dfbd69] text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-opacity-90 transition-all"
+        style="color: #000000"
+      >
+        Acessar Planilha Agora
+      </button>
+      <br />
+      <br />
+      <br />
+      <br />
+    </section>
+
+    <!-- Video Section -->
+    <div
+      class="bg-red-600 text-white px-6 py-4 rounded-md mb-8 max-w-3xl mx-auto shadow-md animate-pulse text-center font-semibold text-base"
+    >
+      🚨ASSISTA E ENTENDA POR QUE ESSA PLANILHA NÃO É COMO AS OUTRAS!
+    </div>
+    <div class="flex justify-center items-center w-full">
+      <div class="aspect-video w-full max-w-6xl">
+        <iframe
+          class="w-full h-full rounded-lg shadow-lg"
+          src="https://www.youtube.com/embed/_PsAcWr0j_0?list=RD_PsAcWr0j_0"
+          title="Be Yourself and Let Self Love Change Your Life"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- Sobre Section -->
+    <section
+      class="bg-white text-[#151515] px-6 py-20"
+      style="background-color: #000000"
+    >
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12"
+      >
+        <div class="flex-1">
+          <h2
+            class="text-4xl font-extrabold mb-6 uppercase tracking-wide"
+            style="color: #dfbd69"
+          >
+            Thiago Nascimento
+          </h2>
+          <p class="mb-4 text-base leading-relaxed" style="color: #ffffff">
+            Com mais de 5 anos no digital e milhões faturados, Thiago decidiu
+            revelar os contatos que ajudaram sua operação a crescer. A planilha
+            de fornecedores é resultado de anos de testes, parcerias reais e
+            relacionamento direto com quem entrega qualidade.
+          </p>
+          <p class="mb-4 text-base leading-relaxed" style="color: #ffffff">
+            São fornecedores com tudo validado, atualizado e pronto para te
+            fazer economizar tempo e escalar.
+          </p>
+          <p class="mb-4 text-base leading-relaxed" style="color: #ffffff">
+            Essa lista é ideal para quem quer montar uma loja online, vender no
+            Instagram, Shopee, Mercado Livre entre outros.
+          </p>
+        </div>
+        <div class="flex-1">
+          <img
+            src="c:\Users\Rafael Sanzio\Documents\landing-page-thiagao\assets\img\upscalemedia-transformed.png"
+            alt="Foto de Thiago Nascimento"
+            class="w-full max-w-lg h-auto object-contain"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimento Section -->
+    <section class="p-10 bg-[#4a10bc]">
+      <h2 class="text-3xl font-bold text-center mb-8 text-white">
+        O que dizem nossos clientes
+      </h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-lg p-6 shadow-sm border border-[#ffd5c9]">
+          <div class="flex justify-center mb-2 text-[#dfbd69] text-lg">
+            ⭐⭐⭐⭐⭐
+          </div>
+          <p class="italic">
+            “Achei fornecedores que nunca tinha encontrado no Google. Já fiz
+            minha primeira venda com lucro!”
+          </p>
+          <p class="mt-4 font-semibold text-[#000000]">
+            — Priscila R., Campinas
+          </p>
+        </div>
+        <div class="bg-white rounded-lg p-6 shadow-sm border border-[#ffd5c9]">
+          <div class="flex justify-center mb-2 text-[#dfbd69] text-lg">
+            ⭐⭐⭐⭐⭐
+          </div>
+          <p class="italic">
+            “Recebi a planilha no mesmo dia e foi o empurrão que faltava pra
+            tirar minha loja do papel.”
+          </p>
+          <p class="mt-4 font-semibold text-[#000000]">— Diego M., Recife</p>
+        </div>
+        <div class="bg-white rounded-lg p-6 shadow-sm border border-[#ffd5c9]">
+          <div class="flex justify-center mb-2 text-[#dfbd69] text-lg">
+            ⭐⭐⭐⭐⭐
+          </div>
+          <p class="italic">
+            “Já trabalhei com marketplace, mas nunca tive acesso a uma curadoria
+            tão completa como essa.”
+          </p>
+          <p class="mt-4 font-semibold text-[#000000]">— Karina T., Curitiba</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- modal Section -->
+    <div
+      id="modalForm"
+      class="fixed inset-0 bg-black bg-opacity-80 backdrop-blur-sm z-50 flex items-center justify-center hidden"
+    >
+      <div
+        class="bg-gradient-to-br from-[#1c1c1c] to-[#2f2f2f] p-8 rounded-xl max-w-md w-full border border-[#dfbd69] shadow-[0_0_30px_#dfbd69aa] relative"
+      >
+        <button
+          onclick="fecharModal()"
+          class="absolute top-3 right-4 text-[#dfbd69] text-2xl font-bold hover:scale-110 transition"
+        >
+          &times;
+        </button>
+        <h2
+          class="text-2xl font-bold text-center mb-6 text-[#dfbd69] tracking-wide uppercase"
+        >
+          Voçê será redirecionado após o preenchimento
+        </h2>
+        <form id="formModal" class="grid gap-5">
+          <input
+            type="text"
+            name="name"
+            placeholder="Nome completo"
+            required
+            class="p-4 rounded-lg bg-[#121212] border border-[#dfbd69] placeholder-[#bbbbbb] text-white shadow-inner focus:ring-2 focus:ring-[#dfbd69]"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="E-mail"
+            required
+            class="p-4 rounded-lg bg-[#121212] border border-[#dfbd69] placeholder-[#bbbbbb] text-white shadow-inner focus:ring-2 focus:ring-[#dfbd69]"
+          />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Telefone com DDD"
+            required
+            class="p-4 rounded-lg bg-[#121212] border border-[#dfbd69] placeholder-[#bbbbbb] text-white shadow-inner focus:ring-2 focus:ring-[#dfbd69]"
+          />
+          <button
+            type="submit"
+            id="botaoEnviar"
+            disabled
+            class="bg-[#dfbd69] text-black py-3 px-6 rounded-lg font-bold text-lg uppercase shadow-md hover:bg-[#f2ce81] transition-all"
+          >
+            Continuar
+          </button>
+        </form>
+        <div class="flex items-start gap-2 text-sm text-white mt-4">
+          <input
+            type="checkbox"
+            id="consentimento"
+            required
+            class="mt-1 accent-[#dfbd69]"
+          />
+          <label for="consentimento" class="leading-snug">
+            Concordo em fornecer meus dados para receber conteúdos e ofertas por
+            e-mail ou outros meios.
+            <a
+              href="https://docs.google.com/document/d/1E_7Fq-jf9VbY1ejwJePUkgCSseAqjrhob4Xx9p312pc/edit?tab=t.0"
+              target="_blank"
+              class="underline text-[#dfbd69] hover:text-[#ffd87d]"
+            >
+              Política de Privacidade </a
+            >.
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#0f0f0f] text-white px-6 py-12">
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row justify-center items-start gap-10 text-center md:text-left"
+      >
+        <div class="md:w-auto">
+          <h2 class="text-2xl font-bold mb-4">Tribo Ecommerce</h2>
+          <p class="text-sm text-[#cccccc] mb-4">
+            Tribo Ecommerce é uma Escola de Negócios com foco total no
+            e-commerce.
+            <br />Auxiliando na estruturação de negócios, automações, campanhas
+            e escala. <br />
+          </p>
+          <p class="text-xs text-[#777] leading-relaxed">
+            Tribo Ecommerce <br />
+            CNPJ: XX.XXX.XXX/XXXX-XX
+          </p>
+        </div>
+        <div class="md:w-auto">
+          <h3 class="text-lg font-semibold mb-3">Redes sociais</h3>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="#" class="hover:underline text-[#cccccc]">Instagram</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline text-[#cccccc]">Facebook</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline text-[#cccccc]">LinkedIn</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline text-[#cccccc]">TikTok</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline text-[#cccccc]">YouTube</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="border-t border-[#333] mt-10 pt-6 text-xs text-[#777] text-center"
+      >
+        <p>© Tribo Ecommerce 2025 — Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
