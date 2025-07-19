@@ -27,7 +27,7 @@ if (formModal) {
       phone: formModal.phone.value
     };
     try {
-      await fetch('https://rssl.app.n8n.cloud/webhook-test/send-form', {
+      await fetch('https://rs.cadeolixo.com.br/webhook/send-form', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(dados)
