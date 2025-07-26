@@ -10,28 +10,26 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
-  <body class="text-[#151515] font-sans">
+  <body class="text-[#151515] font-sans" style="background-color: #0b0f1a">
     <!-- Navbar Section -->
     <section>
       <nav
         class="bg-[#0f0f0f] text-white px-6 py-4 shadow-md fixed w-full top-0 z-50"
+        style="background-color: #0b0f1a"
       >
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-          <h1 class="text-4xl font-bold text-[#dfbd69]">Tribo Ecommerce</h1>
+          <img src="./assets/img/logo-branco.png" alt="logo-triboecommerce" />
           <ul class="flex space-x-6 text-sm font-medium">
             <li>
               <a
                 href="index.html"
-                class="hover:text-[#dfbd69] transition-colors text-2xl"
+                class="hover:text-[#dfbd69] transition-colors text-4xl"
                 >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="calculadora.html"
-                class="hover:text-[#dfbd69] transition-colors text-2xl"
-                >Calculadora</a
               >
             </li>
           </ul>
@@ -41,24 +39,37 @@
 
     <!-- Hero Section -->
     <section
-      class="min-h-screen flex flex-col items-center justify-center text-center px-6 py-20"
-      style="background-image: url('caminho-da-imagem.jpg')"
+      class="relative min-h-screen flex flex-col items-center justify-center text-center px-6 py-20"
     >
+      <div
+        class="absolute inset-0 bg-no-repeat bg-cover bg-center opacity-15 -z-10"
+        style="
+          background-image: url('./assets/img/lista_de_fornecedores_imagem.png');
+        "
+      ></div>
+      <br />
+      <br />
+      <br />
+      <br />
       <h1
         class="text-5xl md:text-6xl font-bold mb-6 leading-tight tracking-tight"
       >
-        <span class="text-[#dfbd69]"
-          >A Lista de Fornecedores que você precisa</span
+        <span class="text-[#ffffff] text-lg md:text-8xl"
+          >A Lista de Fornecedores<br />
+          que você precisa</span
         >
       </h1>
-      <p class="text-lg md:text-xl text-[#ffffff] max-w-2xl mb-8">
-        Economize tempo e comece a vender com os melhores fornecedores do
-        Brasil. Uma curadoria completa com contatos atualizados, preços
-        acessíveis e alta confiabilidade.
+      <br />
+      <p class="text-lg md:text-2xl text-[#ffffff] max-w-2xl mb-8">
+        <b
+          >Economize tempo e comece a vender com os melhores fornecedores do
+          Brasil. Uma curadoria completa com contatos atualizados, preços
+          acessíveis e alta confiabilidade.</b
+        >
       </p>
       <button
         onclick="abrirModal()"
-        class="bg-[#dfbd69] text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-opacity-90 transition-all"
+        class="bg-[#dfbd69] text-white px-8 py-3 rounded-full text-2xl font-semibold hover:bg-opacity-90 transition-all"
         style="color: #000000"
       >
         Acessar Planilha Agora
@@ -70,10 +81,13 @@
     </section>
 
     <!-- Video Section -->
+    <br />
+    <br />
     <div
-      class="bg-red-600 text-white px-6 py-4 rounded-md mb-8 max-w-3xl mx-auto shadow-md animate-pulse text-center font-semibold text-base"
+      class="text-white px-6 py-4 rounded-md mb-8 max-w-3xl mx-auto shadow-md animate-pulse text-center font-semibold text-base"
+      style="background-color: #4a10bc"
     >
-      🚨ASSISTA E ENTENDA POR QUE ESSA PLANILHA NÃO É COMO AS OUTRAS!
+      ASSISTA AO VÍDEO - ENTENDA POR QUE ESSA PLANILHA NÃO É COMO AS OUTRAS!
     </div>
     <div class="flex justify-center items-center w-full">
       <div class="aspect-video w-full max-w-6xl">
@@ -92,7 +106,7 @@
     <!-- Sobre Section -->
     <section
       class="bg-white text-[#151515] px-6 py-20"
-      style="background-color: #000000"
+      style="background-color: #0b0f1a"
     >
       <div
         class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12"
@@ -104,26 +118,57 @@
           >
             Thiago Nascimento
           </h2>
-          <p class="mb-4 text-base leading-relaxed" style="color: #ffffff">
+          <p class="mb-4 text-xl leading-relaxed" style="color: #ffffff">
             Com mais de 5 anos no digital e milhões faturados, Thiago decidiu
             revelar os contatos que ajudaram sua operação a crescer. A planilha
             de fornecedores é resultado de anos de testes, parcerias reais e
             relacionamento direto com quem entrega qualidade.
           </p>
-          <p class="mb-4 text-base leading-relaxed" style="color: #ffffff">
+          <p class="mb-4 text-xl leading-relaxed" style="color: #ffffff">
             São fornecedores com tudo validado, atualizado e pronto para te
             fazer economizar tempo e escalar.
           </p>
-          <p class="mb-4 text-base leading-relaxed" style="color: #ffffff">
+          <p class="mb-4 text-xl leading-relaxed" style="color: #ffffff">
             Essa lista é ideal para quem quer montar uma loja online, vender no
             Instagram, Shopee, Mercado Livre entre outros.
           </p>
+          <div class="flex items-center gap-6 mt-8">
+            <!-- Instagram -->
+            <img
+              src="https://cdn.simpleicons.org/instagram/ffffff"
+              width="32"
+              height="32"
+              alt="Instagram"
+            />
+            <!-- Shopee -->
+            <img
+              src="https://cdn.simpleicons.org/shopee/ffffff"
+              width="32"
+              height="32"
+              alt="Shopee"
+            />
+            <!-- Mercado Livre -->
+            <img
+              src="https://cdn.simpleicons.org/mercadopago/ffffff"
+              width="42"
+              height="42"
+              alt="Mercado Livre"
+            />
+          </div>
+          <br />
+          <br />
+          <button
+            onclick="abrirModal()"
+            class="bg-[#dfbd69] text-white px-8 py-3 rounded-full text-2xl font-semibold hover:bg-opacity-90 transition-all"
+            style="color: #000000"
+          >
+            Acessar Planilha Agora
+          </button>
         </div>
         <div class="flex-1">
           <img
-            src="./assets/img/upscalemedia-transformed.png"
+            src="./assets/img/perfil3-semfundo.png"
             alt="Foto de Thiago Nascimento"
-            class="w-full max-w-lg h-auto object-contain"
           />
         </div>
       </div>
@@ -131,15 +176,15 @@
 
     <!-- Depoimento Section -->
     <section class="p-10 bg-[#4a10bc]">
-      <h2 class="text-3xl font-bold text-center mb-8 text-white">
+      <h2 class="text-5xl font-bold text-center mb-8 text-white">
         O que dizem nossos clientes
       </h2>
       <div class="grid md:grid-cols-3 gap-6">
         <div class="bg-white rounded-lg p-6 shadow-sm border border-[#ffd5c9]">
-          <div class="flex justify-center mb-2 text-[#dfbd69] text-lg">
+          <div class="flex justify-center mb-2 text-[#dfbd69] text-2xl">
             ⭐⭐⭐⭐⭐
           </div>
-          <p class="italic">
+          <p class="italic text-2xl">
             “Achei fornecedores que nunca tinha encontrado no Google. Já fiz
             minha primeira venda com lucro!”
           </p>
@@ -148,20 +193,20 @@
           </p>
         </div>
         <div class="bg-white rounded-lg p-6 shadow-sm border border-[#ffd5c9]">
-          <div class="flex justify-center mb-2 text-[#dfbd69] text-lg">
+          <div class="flex justify-center mb-2 text-[#dfbd69] text-2xl">
             ⭐⭐⭐⭐⭐
           </div>
-          <p class="italic">
+          <p class="italic text-2xl">
             “Recebi a planilha no mesmo dia e foi o empurrão que faltava pra
             tirar minha loja do papel.”
           </p>
           <p class="mt-4 font-semibold text-[#000000]">— Diego M., Recife</p>
         </div>
         <div class="bg-white rounded-lg p-6 shadow-sm border border-[#ffd5c9]">
-          <div class="flex justify-center mb-2 text-[#dfbd69] text-lg">
+          <div class="flex justify-center mb-2 text-[#dfbd69] text-2xl">
             ⭐⭐⭐⭐⭐
           </div>
-          <p class="italic">
+          <p class="italic text-2xl">
             “Já trabalhei com marketplace, mas nunca tive acesso a uma curadoria
             tão completa como essa.”
           </p>
@@ -243,48 +288,65 @@
     </div>
 
     <!-- Footer Section -->
-    <footer class="bg-[#0f0f0f] text-white px-6 py-12">
+    <footer
+      class="bg-[#0f0f0f] text-white px-6 py-12"
+      style="background-color: #0b0f1a"
+    >
       <div
         class="max-w-7xl mx-auto flex flex-col md:flex-row justify-center items-start gap-10 text-center md:text-left"
       >
-        <div class="md:w-auto">
-          <h2 class="text-2xl font-bold mb-4">Tribo Ecommerce</h2>
-          <p class="text-sm text-[#cccccc] mb-4">
-            Tribo Ecommerce é uma Escola de Negócios com foco total no
-            e-commerce.
-            <br />Auxiliando na estruturação de negócios, automações, campanhas
-            e escala. <br />
-          </p>
-          <p class="text-xs text-[#777] leading-relaxed">
-            Tribo Ecommerce <br />
-            CNPJ: XX.XXX.XXX/XXXX-XX
-          </p>
+        <div class="md:w-auto flex items-start space-x-4">
+          <img src="./assets/img/logo-roxo.png" alt="logo-triboecommerce" />
+          <div>
+            <p class="text-xl text-[#ffffff] mb-4">
+              Tribo Ecommerce é uma Escola de Negócios com foco total no
+              e-commerce.
+              <br />Auxiliando na estruturação de negócios, automações,
+              campanhas e escala.
+            </p>
+            <p class="text-xl text-[#ffffff] leading-relaxed">
+              Tribo Ecommerce <br />
+              CNPJ: XX.XXX.XXX/XXXX-XX
+            </p>
+          </div>
         </div>
-        <div class="md:w-auto">
-          <h3 class="text-lg font-semibold mb-3">Redes sociais</h3>
+        <div class="md:w-auto text-2xl">
+          <h3 class="text-[#dfbd69] font-semibold mb-3">Redes sociais</h3>
           <ul class="space-y-2 text-sm">
             <li>
-              <a href="#" class="hover:underline text-[#cccccc]">Instagram</a>
+              <a
+                class="text-xl"
+                href="https://www.instagram.com/thiagonascimento.sp?igsh=MXdqMGVpcGtsajJvMg=="
+                class="hover:underline text-[#cccccc]"
+                >Instagram</a
+              >
             </li>
             <li>
-              <a href="#" class="hover:underline text-[#cccccc]">Facebook</a>
+              <a
+                class="text-xl"
+                href="https://www.facebook.com/share/14J4e4YeSQg/"
+                class="hover:underline text-[#cccccc]"
+                >Facebook</a
+              >
             </li>
             <li>
-              <a href="#" class="hover:underline text-[#cccccc]">LinkedIn</a>
-            </li>
-            <li>
-              <a href="#" class="hover:underline text-[#cccccc]">TikTok</a>
-            </li>
-            <li>
-              <a href="#" class="hover:underline text-[#cccccc]">YouTube</a>
+              <a
+                class="text-xl"
+                href="https://linktr.ee/Thiagonascimento.sp"
+                class="hover:underline text-[#cccccc]"
+                >Linktree</a
+              >
             </li>
           </ul>
         </div>
       </div>
       <div
-        class="border-t border-[#333] mt-10 pt-6 text-xs text-[#777] text-center"
+        class="border-t border-[#ffffff] mt-10 pt-6 text-xl text-[#ffffff] text-center"
       >
         <p>© Tribo Ecommerce 2025 — Todos os direitos reservados.</p>
+        <p class="text-sm text-[#cccccc]">
+          Site desenvolvido por rafaelsanzio16@gmail.com
+        </p>
       </div>
     </footer>
 
