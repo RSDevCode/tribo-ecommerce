@@ -27,7 +27,7 @@ if (formModal) {
       phone: formModal.phone.value
     };
     try {
-      await fetch('https://rs.cadeolixo.com.br/webhook/send-form', {
+      await fetch('https://n8n.triboecom.com.br/webhook/send', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(dados)
