@@ -32,7 +32,7 @@ if (formModal) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(dados)
       });
-      window.location.href = 'https://hotmart.com/pt-br/marketplace/produtos/mtccontenporaneo/L13395143E?sck=HOTMART_SITE';
+      window.location.href = 'https://pay.hotmart.com/K101114610X?bid=1754002347287';
     } catch (error) {
       alert('Erro ao enviar! Tente novamente.');
       console.error(error);
