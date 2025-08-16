@@ -32,7 +32,14 @@ if (formModal) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(dados)
       });
-      window.location.href = 'https://pay.hotmart.com/K101114610X?bid=1754002347287';
+
+      // Dispara o evento de conversão
+      fbq("track", "Lead");
+
+      setTimeout(() => {
+          window.location.href = 'https://pay.hotmart.com/K101114610X?bid=1754002347287';
+      }, 500);
+
     } catch (error) {
       alert('Erro ao enviar! Tente novamente.');
       console.error(error);
